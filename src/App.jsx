@@ -731,7 +731,7 @@ function buildBrandNotifyMsg(order) {
   const addedBy = order.addedBy ? "\n* Added By: " + order.addedBy : "";
   const notes   = order.notes   ? "\n* Notes: " + order.notes : "";
   return (
-    "NEW ORDER ALERT - " + (getBrandConfig().businessName||"Business")\n\n" +
+    "NEW ORDER ALERT - " + (getBrandConfig().businessName||"Business") + "\n\n" +
     SEP + "\n" +
     "Order ID: " + order.orderId + "\n" +
     "Product: " + order.product + " x " + order.qty + "\n" +
