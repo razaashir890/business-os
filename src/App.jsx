@@ -2810,7 +2810,7 @@ function FollowUpTab({ db, access, orders }) {
   // Build WA message for reminder
   const buildFollowUpMsg = (r) => {
     const templates = {
-      `Follow-up`: `Salam ${r.customerName}! Umeed hai aap theek hain. Hum ${getBrandConfig().businessName||"our"} team ki taraf se puchh rahe hain — aapka order kaisa laga? Koi feedback ho toh zaroor batayein. *Khushboo That Speaks for You*`,
+      "Follow-up": `Salam ${r.customerName}! Umeed hai aap theek hain. Hum ${getBrandConfig().businessName||"our"} team ki taraf se puchh rahe hain — aapka order kaisa laga? Koi feedback ho toh zaroor batayein. *${getBrandConfig().businessName||"Team"}*`,
       "Re-order Reminder": `Salam ${r.customerName}! Aapka favourite ${getBrandConfig().businessName||"product"} item khatam hone wala hoga. Stock limited hai — abhi reorder karein! ${WEBSITE_URL}`,
       "Payment Reminder": `Salam ${r.customerName}! Aapke order ka payment pending hai. Please confirm karein taake hum aapka order process kar sakein. Shukriya! *${getBrandConfig().businessName||"us"}*`,
       "Feedback Request": `Salam ${r.customerName}! ${getBrandConfig().businessName||"Our product"} use karne ka experience kaisa raha? Aapka feedback hamein behtar banata hai. Ek short review zaroor dijiye! *${getBrandConfig().businessName||"Team"}*`,
